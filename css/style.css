@@ -1,0 +1,587 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------Обнуление завершено---------------------*/
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/Bebas-Regular.eot");
+  src: local("☺"), url("../fonts/Bebas-Regular.woff") format("woff"), url("../fonts/Bebas-Regular.ttf") format("truetype"), url("../fonts/Bebas-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0px auto;
+}
+
+body {
+  font-family: 'PT Sans';
+}
+
+.btn {
+  letter-spacing: 1.5px;
+  padding: 18px 34px;
+  background-color: #000;
+  color: white;
+  font-family: 'Bebas';
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.btn:hover {
+  background-color: #878787;
+}
+
+.btn-form {
+  letter-spacing: 1.5px;
+  padding: 14px 26px;
+  color: black;
+  background-color: #fff;
+  font-family: 'Bebas';
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 1.5px;
+  font-family: 'Bebas';
+}
+
+.text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: black;
+}
+
+.title {
+  color: #000000;
+  font-family: 'Bebas';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.header {
+  font-family: 'Bebas';
+  padding: 30px 0 80px 0;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__bottom {
+  position: relative;
+  margin-top: 30px;
+}
+
+.header__logo {
+  width: 212px;
+  position: absolute;
+  top: -45.00011px;
+  left: 50%;
+  margin-left: -106px;
+}
+
+.language {
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: underline;
+  padding: 3px;
+  margin-right: 5px;
+  display: inline-block;
+  color: black;
+}
+
+.language--active {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.order {
+  color: black;
+  text-decoration: underline;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item:nth-child(3) {
+  margin-right: 330px;
+}
+
+.menu__link {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100%;
+}
+
+.h1 {
+  font-family: 'Bebas';
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+.hero {
+  background: #000;
+}
+
+.hero__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15px;
+}
+
+.hero__bg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background: url("../img/hero/hero_bg.jpg") 0 0/cover no-repeat;
+}
+
+.hero__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 80px 0 75px 60px;
+  color: white;
+}
+
+.hero__text {
+  color: #ffffff;
+  max-width: 305px;
+  margin-bottom: 55px;
+}
+
+.hero__btn {
+  margin-right: 10px;
+  background-color: #fff;
+  color: black;
+}
+
+.hero__link {
+  color: white;
+  display: inline-block;
+}
+
+.food {
+  padding: 75px 0;
+}
+
+.food__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 910px) {
+  .food__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.food__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+@media (max-width: 910px) {
+  .food__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.food__img {
+  margin-bottom: 25px;
+}
+
+.food__column-body {
+  padding: 0 30px 0 5px;
+}
+
+.food__title {
+  margin-bottom: 36px;
+  max-width: 125px;
+}
+
+.food__text {
+  margin-bottom: 32px;
+}
+
+.food__btn {
+  margin-bottom: 30px;
+}
+
+.food__link {
+  display: block;
+}
+
+.about-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-top__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: right;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 5px;
+  font-family: 'Bebas';
+  background-color: black;
+  color: white;
+  padding: 56px 61px 56px 10px;
+}
+
+.about-top__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background: url("../img/about/about_bg.jpg") 0 0/cover no-repeat;
+}
+
+.about-bottom {
+  padding-top: 50px;
+  background-color: #ebebeb;
+}
+
+.about-bottom__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-bottom__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: 50px;
+}
+
+.column-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-about__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column-about__body {
+  padding-left: 15px;
+}
+
+.column-about__title {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.column-about__text {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.about-icon {
+  max-width: 100%;
+}
+
+.hello {
+  padding: 82px 0 28px 0;
+}
+
+.hello__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hello__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.hello__address {
+  background: url("../img/hello/pin.svg") left no-repeat;
+  padding-left: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.hello__phone {
+  background: url("../img/hello/phone.svg") left no-repeat;
+  padding-left: 30px;
+  line-height: 35px;
+}
+
+.hello__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.hello__email {
+  background: url("../img/hello/mail.svg") left no-repeat;
+  padding-left: 40px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.hello__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 195px;
+}
+
+.h2 {
+  color: #000000;
+  font-family: 'Bebas';
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 35px;
+}
+
+.map__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.map__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-color: #000;
+  padding: 54px;
+}
+
+.map__form {
+  max-width: 375px;
+}
+
+.message-form__title {
+  margin-bottom: 28px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  border: 1px solid #959595;
+  background-color: #252525;
+  height: 50px;
+  border-radius: 0 !important;
+  margin: 0px 0px 25px 0px;
+  width: 100%;
+  display: block;
+  padding: 0px 20px;
+}
+
+.input.err {
+  border: 1px solid red;
+}
+
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px 10px;
+}
+
+.footer__text {
+  padding-top: 10px;
+  color: #4d4d4d;
+  font-family: 'PT Sans';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
